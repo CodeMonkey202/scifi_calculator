@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Scientific Calculator in HTML CSS and JavaScript</title>
+</head>
+<body>
+  <div class="calculator">
+    <!-- Calculator Body -->
+    <h2>Scientific Calculator</h2>
+    <input type="text" id="display" >
+    <div class="buttons">
+      <!-- Number buttons -->
+      <button onclick="appendNumber('7')">7</button>
+      <button onclick="appendNumber('8')">8</button>
+      <button onclick="appendNumber('9')">9</button>
+      <button onclick="appendNumber('4')">4</button>
+      <button onclick="appendNumber('5')">5</button>
+      <button onclick="appendNumber('6')">6</button>
+      <button onclick="appendNumber('1')">1</button>
+      <button onclick="appendNumber('2')">2</button>
+      <button onclick="appendNumber('3')">3</button>
+      <button onclick="appendNumber('0')">0</button>
+
+      <!-- Operation buttons -->
+      <button onclick="appendOperator('+')">+</button>
+      <button onclick="appendOperator('-')">-</button>
+      <button onclick="appendOperator('*')">*</button>
+      <button onclick="appendOperator('/')">/</button>
+      <button onclick="calculate()">=</button>
+
+      <!-- Scientific functions -->
+      <button onclick="appendFunction('sqrt')">√</button>
+      <button onclick="appendFunction('square')">x²</button>
+      <button onclick="appendFunction('cube')">x³</button>
+      <button onclick="appendFunction('power')">x^y</button>
+      <button onclick="appendFunction('sin')">sin</button>
+      <button onclick="appendFunction('cos')">cos</button>
+      <button onclick="appendFunction('tan')">tan</button>
+
+      <!-- Trigonometric Functions -->
+      <button onclick="appendFunction('asin')">asin</button>
+      <button onclick="appendFunction('acos')">acos</button>
+      <button onclick="appendFunction('atan')">atan</button>
+
+      <!-- HYperbolic Functions -->
+      <button onclick="appendFunction('sinh')">sinh</button>
+      <button onclick="appendFunction('cosh')">cosh</button>
+      <button onclick="appendFunction('tanh')">tanh</button>
+
+      <!-- EXponential and LOgarithmic Functions -->
+
+      <button onclick="appendFunction('ln')">ln</button>
+      <button onclick="appendFunction('log')">log</button>
+      <button onclick="appendFunction('fact')">!x</button>
+      <button onclick="appendFunction('nPr')">nPr</button>
+      <button onclick="appendFunction('nCr')">nCr</button>
+
+
+      <!-- RDaians to Degrees Functions -->
+      <button onclick="appendFunction('rad')">Rad</button>
+      <button onclick="appendFunction('deg')">Deg</button>
+      <button onclick="appendFunction('nPr')">nPr</button>
+
+      <!-- Other buttons -->
+      <button onclick="clearDisplay()">C</button>
+      <button onclick="deleteLast()" class="del">DEL</button>
+      <button onclick="appendDecimal()">.</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

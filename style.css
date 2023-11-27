@@ -1,0 +1,59 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: #047597bb;
+}
+h2{
+    color:white;
+    font-family: Poppins;
+    font-size: 2.5em;
+}
+.calculator{
+    text-align: center;
+    margin-top: 300px;
+}
+/* Input Display */
+#display{
+width: 100%;
+padding: 10px;
+font-size: 1.5em;
+margin-bottom: 10px;
+/* font-family: LED; 
+if you use a Windows Machine,use the LED Font on your System, run an UBuntu Machine  and i can't find that font for it to make it look more like a cool calculator
+*/
+}
+
+/* Input Field */
+input{
+    color: white;
+    background: rgb(38, 43, 30);
+    border:none;
+    border-radius: 5px;
+    height: 50px;
+}
+ /*Delete Button  */
+ .del{
+    background: red;
+ }
+/* Calculator Buttons */
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 25px;
+}
+button{
+    width: 100%;
+    padding: 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: white;
+    background: #444;
+    border:none;
+    border-radius: 5px;
+}
+button:hover{
+    opacity: 0.6;
+}
